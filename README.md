@@ -1,16 +1,17 @@
 # react-native-disable-battery-optimizations
 
 ## Getting started
+## 安装
 
-`$ npm install react-native-disable-battery-optimizations --save`
+`$ npm install https://github.com/liu-miao-miao/react-native-disable-battery-optimizations.git`
 
 ### Mostly automatic installation
+### 自动link
 
 `$ react-native link react-native-disable-battery-optimizations`
 
 ### Manual installation
-
-
+### 手动link
 
 #### Android
 
@@ -26,6 +27,10 @@
   	```
       compile project(':react-native-disable-battery-optimizations')
   	```
+4. add the following line to `AndroidManifest.xml`:
+	```
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	```
 
 ## Usage
 ```javascript
